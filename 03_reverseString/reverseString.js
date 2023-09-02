@@ -1,22 +1,15 @@
 const reverseString = function(string) {
-	// create variable to hold string
-	// turn variable str into an array
-	// create new array
-	// loop through each letter in array
-	// remove last element of array
-	// push them to new array
-	// turn array to string format
-	// remove all commas
-	// return reversed string
 	let str = string;
+	// convert string to array
 	let strArray = Array.from(str);
 	let newArray = [];
 	for (let i = 0; i < str.length; i++) {
-		let remove = strArray.pop();
-		newArray.push(remove);
+		// removes last element in strArray and adds to newArray
+		newArray.push(strArray.pop());
 	}
-	let arrToStr = newArray.toString();
-	return arrToStr.replaceAll(",", "");
+	// converts array to str
+	// replaces all commas with nospace
+	return newArray.toString().replaceAll(",", "");
 };
 
 // Do not edit below this line
