@@ -7,8 +7,7 @@ const reverseString = function(string) {
 		// removes last element in strArray and adds to newArray
 		newArray.push(strArray.pop());
 	}
-	// converts array to str
-	// replaces all commas with nospace
+	// converts array to str and removes commas
 	return newArray.toString().replaceAll(",", "");
 };
 
